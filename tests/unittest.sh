@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
+set -ex
 
-CC="${CC:-gcc} -Wall"
+CC="${CC:-clang} -Wall -fsanitize=address"
 
 $CC ../ini.c unittest.c -o unittest_multi
 ./unittest_multi > baseline_multi.txt
