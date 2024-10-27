@@ -67,3 +67,14 @@ no_value.ini: e=2 user=109
 ... [_123456789_123456789_123456789_123456789_12345678]
 ... name=value;  line 3
 long_section.ini: e=0 user=110
+... [width = 18]
+... _123456789_12345=7;  line 2
+... [width = 19]
+... _123456789_12345=78;  line 5
+... [width = 20]
+... _123456789_12345=789;  line 8
+... [2 assigns]
+... _123456789_12345=78name=value;  line 11
+... [no newline]
+... _123456782_12345=78;  line 16
+long_line.ini: e=0 user=111
